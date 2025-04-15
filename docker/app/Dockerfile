@@ -23,7 +23,7 @@ ENV HEALTHCHECK_PORT=8080 \
 COPY BOOT-INF/lib /app/lib
 COPY META-INF /app/META-INF
 COPY BOOT-INF/classes /app
-COPY --chmod=755 cmd.sh /app
+COPY --chmod=755 ./cmd.sh /app
 
 #################
 ### Let's go   ##
@@ -31,7 +31,6 @@ COPY --chmod=755 cmd.sh /app
 
 # Define the startup command
 ENTRYPOINT ["/app/cmd.sh"]
-
 
 # Health check to ensure the app is up and running
 HEALTHCHECK --interval=10s --timeout=3s --retries=20 \
