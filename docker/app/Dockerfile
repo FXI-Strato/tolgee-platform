@@ -23,7 +23,7 @@ ENV HEALTHCHECK_PORT=8080 \
 COPY BOOT-INF/lib /app/lib
 COPY META-INF /app/META-INF
 COPY BOOT-INF/classes /app
-COPY --chmod=755 ./cmd.sh /app
+COPY --chmod=755 cmd.sh /app
 
 #################
 ### Let's go   ##
