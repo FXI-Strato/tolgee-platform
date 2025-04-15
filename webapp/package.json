@@ -137,5 +137,10 @@
     "vite-plugin-static-copy": "^1.0.0",
     "vite-plugin-svgr": "^4.2.0",
     "vite-tsconfig-paths": "^4.2.3"
+  },
+  "overrides": {
+    "create-ecdh": {
+      "elliptic": "^6.6.1"
+    }
   }
 }
